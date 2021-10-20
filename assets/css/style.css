@@ -100,9 +100,11 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 87%; 
   margin: 0 auto;
 }
+
+* { box-sizing: border-box; }
 /*=================================
   Header styling starts here
 =================================*/
@@ -119,36 +121,70 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.body-container {  background-color: #ECECED; }
+.weatherinfo-container { text-align: center; }
+.thunderstorm { background-color: #E05126; }
+.drizzle { background-color: #156297; }
+.rain { background-color: #22A2DC; }
+.snow { background-color: #7AC4BD; }
+.atmosphere { background-color: #8E5B8E; }
+.clear { background-color: #E7BF5D; }
+.clouds { background-color: #7CBFE4; }
+
+h2 { 
+  font-size: 30px;
+  font-weight: 600;
+}
 
 
+.city {
+  margin: 3% 0;
+  font-size: 21px;
+  text-align: center;
+  text-transform: capitalize;
+}
 
+span {
+  font-size: 25px;
+  text-transform: capitalize; 
+}
 
+.search {
+  padding: 2px 28px;
+  margin-left: 1%;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: background-color 800ms;
+}
 
+.search:hover {
+  background-color: #059862;
+  color: #FFF;
+}
 
+.nameval {
+  margin-bottom: 17px;
+  display: block;
+  text-transform: uppercase;
+}
 
-
+.tempval { margin-left: 1%; }
 /*=================================
   main styling ends here
 =================================*/
 
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 480px) {
+  .search {
+    margin: 0 auto 22px;
+    display: block;
+  }
+}
 
 
 
-}  
+
+
+
+
